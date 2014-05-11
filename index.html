@@ -59,7 +59,7 @@
                 
                 /* Basic */
                 $('#show-info-message').on('click', function(){
-                    $.rustaMsgBox();
+                    $.rustaMsgBox({ "content" : "hi I'm the rusta message box" });
                 });
                 $('#show-warning-message').on('click', function(){
                     $.rustaMsgBox({ 'mode' : 'warning' });

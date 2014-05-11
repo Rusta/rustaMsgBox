@@ -5,7 +5,7 @@ Simple un-obtrusive popup message box
 
 Call it like this (specifying the content to display):
 
-$.rustaMsgBox({ 'content' : 'hi I'm the rusta message box' });
+$.rustaMsgBox({ "content" : "hi I'm the rusta message box" });
 
 You can also provide the following overrides in addition to just the content to control how the nox behaves (defaults shown below):
 

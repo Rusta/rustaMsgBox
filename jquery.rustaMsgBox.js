@@ -16,6 +16,11 @@
             opacity: 0.9
         }, options );
 
+        // if fadeOut is false then we need to show the closeButton
+        if (!settings.fadeOut){
+        	settings.closeButton = true;
+        }
+
         // styles for the delivered modes
         if ( settings.mode == 'warning' )
         {
