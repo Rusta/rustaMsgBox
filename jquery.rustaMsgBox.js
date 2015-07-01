@@ -13,6 +13,7 @@
             maxWidth: '300px',
             mode: 'info', /* warning, success, error, info */
             bottom: '-90px',
+            stack: true,
             opacity: 0.9
         }, options );
 
@@ -148,7 +149,7 @@
 
 		// animate message box on to screen
 	    $('#' + msgBoxId).animate({
-	    	"bottom": 20
+	    	"bottom": 20  + (parseInt(settings.stack?1:0) * parseInt($(".rusta-msgBox").length - 1))*50
 	    }, 600);
 		
 		// fade out after set amount of time
